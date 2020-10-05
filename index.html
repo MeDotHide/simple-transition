@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <img src="img/totoro.gif" alt="">
+    </div>
+    <div class="page1" id="page1">
+       <h1>PAGE 1 <br>
+           <a onclick="appearP2()">Loader</a>
+       </h1>
+    </div>
+    <div class="page2" id="page2">
+       <h1>PAGE 2 <br>
+        <a onclick="appearP1()">Loader</a></h1>
+    </div>
+
+
+    <script>
+        function appearP2() { 
+            var loader = document.getElementById('loader');
+            var page1 = document.getElementById('page1');
+            var page2 = document.getElementById('page2');
+            loader.style.left = "0";
+            setTimeout(function() { 
+                loader.style.left = "-100%";
+                page1.style.display = "none";
+                page2.style.display = 'block';
+             }, 1500)
+         }
+
+         function appearP1() { 
+            var loader = document.getElementById('loader');
+            var page1 = document.getElementById('page1');
+            var page2 = document.getElementById('page2');
+            loader.style.left = "0";
+            setTimeout(function() { 
+                loader.style.left = "-100%";
+                page1.style.display = "block";
+                page2.style.display = 'none';
+             }, 1500)
+         }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loader {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  left: -100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.loader img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.page1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #b1f6ff;
+  text-align: center;
+}
+
+.page1 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: white;
+}
+
+.page1 h1 a {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.page2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8b1ff;
+  display: none;
+  text-align: center;
+}
+
+.page2 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #1d1d1d;
+}
+
+.page2 h1 a {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

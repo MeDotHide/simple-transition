@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.loader {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    left: -100%;
+    transition: .5s;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); //Thank you for watching!!!
+    }
+}
+
+.page1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(177, 246, 255);
+    text-align: center;
+
+
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        color: white;
+        
+        a {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.page2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(248, 177, 255);
+    display: none;
+    text-align: center;
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        color: rgb(29, 29, 29);
+
+        a {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
